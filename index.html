@@ -85,6 +85,17 @@
       // the writeup to view the URL pattern for fetch one and fetch all
       function fetchAll() {
         // TODO
+        //var endPointFetch = document.getElementById("endpoint");
+fetch("http://localhost:3000/posts/cors-enabled/some.json", {mode: "cors"})
+  .then(function(id) {
+    console.log(JSON.parse(JSON.stringify(id)));
+  })
+  .then(function(title) {
+    console.log(JSON.parse(JSON.stringify(title)));
+  })
+  .then(function(author) {
+    console.log(JSON.parse(JSON.stringify(author)));
+  });
       }
 
       // This function should fetch one entry from the given endpoint.
